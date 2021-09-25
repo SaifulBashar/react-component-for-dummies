@@ -1,9 +1,12 @@
 import { Global, css } from "@emotion/react";
 import "prismjs/themes/prism-tomorrow.css";
+// @ts-ignore
+import normalize from "normalize.css";
 
 const globalStyles = (
   <Global
     styles={css`
+      ${normalize}
       @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
       html,
       body {

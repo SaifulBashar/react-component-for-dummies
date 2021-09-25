@@ -36,6 +36,7 @@ const ContentContainer = styled.div`
   padding: 24px;
   position: relative;
   margin: 1rem;
+  height: 100%;
   & > [aria-label="Close"] {
     background: transparent;
     border: none;
