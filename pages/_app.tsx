@@ -1,4 +1,5 @@
 import { Global, css } from "@emotion/react";
+import "prismjs/themes/prism-tomorrow.css";
 
 const globalStyles = (
   <Global
@@ -9,6 +10,10 @@ const globalStyles = (
         margin: 0;
         background: #e0e7ff;
         min-height: 100vh;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+          "Noto Color Emoji";
       }
     `}
   />
