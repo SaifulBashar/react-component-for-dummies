@@ -1,4 +1,5 @@
 import { css } from "@emotion/css";
+import { Radio } from "../components/Radio";
 import { ModalSection } from "../components/sections/ModalSection";
 
 function Page() {
@@ -19,10 +20,11 @@ function Page() {
         >
           React Components for Dummies
         </h1>
+
         <div
           className={css`
             padding: 1rem;
-            margin: 1rem;
+            display: flex;
             border-radius: 0.5rem;
             max-width: 900px;
             width: 100%;
@@ -31,8 +33,28 @@ function Page() {
             background: white;
           `}
         >
+          <div
+            className={css`
+              padding-right: 12px;
+              margin-right: 12px;
+              min-width: 180px;
+            `}
+          >
+            <h4>Components</h4>
+            <ol
+              className={css`
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+              `}
+            >
+              <li>Modal</li>
+            </ol>
+          </div>
           <ModalSection />
         </div>
+        {/* <Radio name="dd">Chexck</Radio> */}
       </div>
     </>
   );

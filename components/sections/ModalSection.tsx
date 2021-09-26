@@ -33,7 +33,6 @@ export function ModalSection() {
     >
       {(props: FormikProps<any>) => (
         <div>
-          <h2>Modal</h2>
           <div
             className={css`
               border: 2px solid rgb(226, 226, 226);
@@ -41,6 +40,7 @@ export function ModalSection() {
               padding: 1rem;
             `}
           >
+            <h2>Modal</h2>
             <Modal
               isOpen={props.values.isOpen}
               onClose={() => props.setFieldValue("isOpen", false)}
