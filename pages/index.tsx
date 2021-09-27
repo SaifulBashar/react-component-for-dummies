@@ -1,5 +1,4 @@
 import { css } from "@emotion/css";
-import { Radio } from "../components/Radio";
 import { ModalSection } from "../components/sections/ModalSection";
 
 function Page() {
@@ -26,7 +25,7 @@ function Page() {
             padding: 1rem;
             display: flex;
             border-radius: 0.5rem;
-            max-width: 900px;
+            max-width: 1100px;
             width: 100%;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
               0 2px 4px -1px rgba(0, 0, 0, 0.06);
