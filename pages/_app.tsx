@@ -14,7 +14,6 @@ const globalStyles = (
       html,
       body {
         margin: 0;
-        background: #e0e7ff;
         min-height: 100vh;
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
           "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
