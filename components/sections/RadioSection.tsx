@@ -1,9 +1,8 @@
 import { Modal } from "../Modal";
 import { css } from "@emotion/css";
-import { Field, FieldProps, Formik, FormikProps } from "formik";
+import { Field, Formik, FormikProps } from "formik";
 import { Code } from "../Code";
 import { table_td, table_th } from "../../css/table";
-import { Radio } from "../Radio";
 
 const code = `const [open, setOpen] = useState(false);
 
@@ -21,7 +20,7 @@ const code = `const [open, setOpen] = useState(false);
    );
  }}
 </Modal>`;
-export function ModalSection() {
+export function RadioSection() {
   return (
     <Formik
       initialValues={{ isOpen: false, size: "default" }}
@@ -99,21 +98,18 @@ export function ModalSection() {
                   Size
                 </span>
                 <div role="group" aria-labelledby="checkbox-group">
-                  <Field value="default" name="size">
-                    {(props: FieldProps<string>) => (
-                      <Radio {...props.field}>default</Radio>
-                    )}
-                  </Field>
-                  <Field value="auto" name="size">
-                    {(props: FieldProps<string>) => (
-                      <Radio {...props.field}>auto</Radio>
-                    )}
-                  </Field>
-                  <Field value="full" name="size">
-                    {(props: FieldProps<string>) => (
-                      <Radio {...props.field}>full</Radio>
-                    )}
-                  </Field>
+                  <label style={{ marginRight: 12 }}>
+                    <Field type="radio" name="size" value="default" />
+                    &nbsp;default
+                  </label>
+                  <label style={{ marginRight: 12 }}>
+                    <Field type="radio" name="size" value="auto" />
+                    &nbsp;auto
+                  </label>
+                  <label style={{ marginRight: 12 }}>
+                    <Field type="radio" name="size" value="full" />
+                    &nbsp;full
+                  </label>
                 </div>
               </div>
             </div>

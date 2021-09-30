@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import { FunctionComponent, InputHTMLAttributes, ReactNode } from "react";
 
 const CheckboxContainer = styled.div`
+  display: inline-block;
   input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -22,6 +23,9 @@ const CheckboxContainer = styled.div`
   input:checked {
     border: 6px solid black;
   }
+  label {
+    padding-right: 8px;
+  }
 `;
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
@@ -29,6 +33,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 export const Radio: FunctionComponent<InputProps> = ({
   name,
+
   children,
   ...rest
 }) => {
