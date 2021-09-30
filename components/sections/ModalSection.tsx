@@ -33,7 +33,7 @@ export function ModalSection() {
       }}
     >
       {(props: FormikProps<any>) => (
-        <div>
+        <div id="modal-section">
           <div
             className={css`
               border: 1px solid rgb(226, 226, 226);

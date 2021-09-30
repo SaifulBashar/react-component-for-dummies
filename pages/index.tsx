@@ -1,5 +1,6 @@
 import { css } from "@emotion/css";
 import { ModalSection } from "../components/sections/ModalSection";
+import { RadioSection } from "../components/sections/RadioSection";
 
 function Page() {
   return (
@@ -45,14 +46,26 @@ function Page() {
                 margin: 0;
                 padding: 0;
                 width: 100%;
+                li {
+                  margin-top: 12px;
+                  margin-bottom: 12px;
+                }
               `}
             >
-              <li>Modal</li>
+              <li>
+                <a href="#modal-section">Modal</a>
+              </li>
+              <li>
+                <a href="#radio-section">Radio</a>
+              </li>
             </ol>
           </div>
-          <ModalSection />
+          <div>
+            <ModalSection />
+            <br />
+            <RadioSection />
+          </div>
         </div>
-        {/* <Radio name="dd">Chexck</Radio> */}
       </div>
     </>
   );
