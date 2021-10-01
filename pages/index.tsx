@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import { ModalSection } from "../components/sections/ModalSection";
 import { RadioSection } from "../components/sections/RadioSection";
+import { PaginationSection } from "../components/sections/PaginationSection";
 
 function Page() {
   return (
@@ -71,6 +72,8 @@ function Page() {
             <ModalSection />
             <br />
             <RadioSection />
+            <br />
+            <PaginationSection />
           </div>
         </div>
       </div>
