@@ -25,7 +25,7 @@ const code = `
 `;
 export function PaginationSection() {
   return (
-    <div id="radio-section">
+    <div id="pagination-section">
       <div
         className={css`
           border: 1px solid rgb(226, 226, 226);
@@ -65,7 +65,7 @@ export function PaginationSection() {
         </div>
         <br />
 
-        <h3>Radio Props</h3>
+        <h3>Pagination Props</h3>
 
         {/*<table*/}
         {/*  className={css`*/}

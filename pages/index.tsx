@@ -65,6 +65,9 @@ function Page() {
               </li>
               <li>
                 <a href="#radio-section">Radio</a>
+              </li>{" "}
+              <li>
+                <a href="#pagination-section">Pagination</a>
               </li>
             </ol>
           </div>
