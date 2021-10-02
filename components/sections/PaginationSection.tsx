@@ -1,17 +1,6 @@
-// <Paginate
-//     forcePage={
-//         parseQueryParameter(history.location.search).page
-//             ? parseInt(
-//             parseQueryParameter(history.location.search).page
-//         ) - 1
-//             : 0
-//     }
-//     onPageChange={_handleOnPageChange}
-//     pageCount={Math.floor(state.count) / 12}
-// />
 import { css } from "@emotion/css";
 import { Code } from "../Code";
-// import { table_td, table_th } from "../../css/table";
+import { table_td, table_th } from "../../css/table";
 
 import { Paginate } from "../Pagination";
 
@@ -67,43 +56,39 @@ export function PaginationSection() {
 
         <h3>Pagination Props</h3>
 
-        {/*<table*/}
-        {/*  className={css`*/}
-        {/*    min-width: 100%;*/}
-        {/*    border-spacing: 0;*/}
-        {/*  `}*/}
-        {/*>*/}
-        {/*  <thead className="">*/}
-        {/*    <tr className="">*/}
-        {/*      <th className={table_th}>Name</th>*/}
-        {/*      <th className={table_th}>Type</th>*/}
-        {/*      <th className={table_th}>Description</th>*/}
-        {/*    </tr>*/}
-        {/*  </thead>*/}
-        {/*  <tbody className="">*/}
-        {/*    <tr className="da">*/}
-        {/*      <td className={table_td}>name</td>*/}
-        {/*      <td className={table_td}>string</td>*/}
-        {/*      <td className={table_td}>*/}
-        {/*        The name attribute specifies the name of an input element.*/}
-        {/*      </td>*/}
-        {/*    </tr>*/}
-        {/*    <tr className="da">*/}
-        {/*      <td className={table_td}>onChange</td>*/}
-        {/*      <td className={table_td}>function</td>*/}
-        {/*      <td className={table_td}>*/}
-        {/*        Handler for change events on trigger element.*/}
-        {/*      </td>*/}
-        {/*    </tr>*/}
-        {/*    <tr className="da">*/}
-        {/*      <td className={table_td}>value</td>*/}
-        {/*      <td className={table_td}>string</td>*/}
-        {/*      <td className={table_td}>*/}
-        {/*        Passed to the input element value attribute*/}
-        {/*      </td>*/}
-        {/*    </tr>*/}
-        {/*  </tbody>*/}
-        {/*</table>*/}
+        <table
+          className={css`
+            min-width: 100%;
+            border-spacing: 0;
+          `}
+        >
+          <thead className="">
+            <tr className="">
+              <th className={table_th}>Name</th>
+              <th className={table_th}>Type</th>
+              <th className={table_th}>Description</th>
+            </tr>
+          </thead>
+          <tbody className="">
+            <tr className="da">
+              <td className={table_td}>forcePage</td>
+              <td className={table_td}>number</td>
+              <td className={table_td}>Select current page number</td>
+            </tr>
+            <tr className="da">
+              <td className={table_td}>onPageChange</td>
+              <td className={table_td}>function</td>
+              <td className={table_td}>
+                Handler for change events on trigger element.
+              </td>
+            </tr>
+            <tr className="da">
+              <td className={table_td}>pageCount</td>
+              <td className={table_td}>number</td>
+              <td className={table_td}>total number of element / limit</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );
