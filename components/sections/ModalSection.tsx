@@ -42,6 +42,7 @@ export function ModalSection() {
             `}
           >
             <h2>Modal</h2>
+
             <Modal
               isOpen={props.values.isOpen}
               onClose={() => props.setFieldValue("isOpen", false)}
@@ -99,19 +100,25 @@ export function ModalSection() {
                   Size
                 </span>
                 <div role="group" aria-labelledby="checkbox-group">
-                  <Field value="default" name="size">
+                  <Field name="size">
                     {(props: FieldProps<string>) => (
-                      <Radio {...props.field}>default</Radio>
+                      <Radio {...props.field} value="default">
+                        default
+                      </Radio>
                     )}
                   </Field>
-                  <Field value="auto" name="size">
+                  <Field name="size">
                     {(props: FieldProps<string>) => (
-                      <Radio {...props.field}>auto</Radio>
+                      <Radio {...props.field} value="auto">
+                        auto
+                      </Radio>
                     )}
                   </Field>
-                  <Field value="full" name="size">
+                  <Field name="size">
                     {(props: FieldProps<string>) => (
-                      <Radio {...props.field}>full</Radio>
+                      <Radio {...props.field} value="full">
+                        full
+                      </Radio>
                     )}
                   </Field>
                 </div>
