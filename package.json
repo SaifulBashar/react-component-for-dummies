@@ -1,6 +1,13 @@
 {
   "name": "react-component-for-dummies",
-  "version": "1.0.0",
+  "description": "Dead simple react components for daily use.",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaifulBashar/react-component-for-dummies.git"
+  },
+
   "scripts": {
     "dev": "next",
     "build": "next build",
