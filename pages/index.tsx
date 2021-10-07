@@ -2,6 +2,7 @@ import { css } from "@emotion/css";
 import { ModalSection } from "../components/sections/ModalSection";
 import { RadioSection } from "../components/sections/RadioSection";
 import { PaginationSection } from "../components/sections/PaginationSection";
+import { EmptyViewSection } from "../components/sections/EmptyViewSection";
 
 function Page() {
   return (
@@ -69,6 +70,9 @@ function Page() {
               <li>
                 <a href="#pagination-section">Pagination</a>
               </li>
+              <li>
+                <a href="#empty-section">Empty View</a>
+              </li>
             </ol>
           </div>
           <div>
@@ -77,6 +81,8 @@ function Page() {
             <RadioSection />
             <br />
             <PaginationSection />
+            <br />
+            <EmptyViewSection />
           </div>
         </div>
       </div>

@@ -13,12 +13,30 @@ const globalStyles = (
       }
       html,
       body {
+        line-height: 1.5;
         margin: 0;
         min-height: 100vh;
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
           "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
           "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
           "Noto Color Emoji";
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
     `}
   />
