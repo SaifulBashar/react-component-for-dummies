@@ -10,7 +10,7 @@ export const table_th = css`
 `;
 
 export const table_td = css`
-  white-space: nowrap;
+  white-space: pre-wrap;
   text-align: left;
   padding: 16px;
   line-height: 20px;

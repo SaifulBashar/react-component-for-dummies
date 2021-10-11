@@ -29,7 +29,7 @@ type Placement =
   | "left"
   | "left-start"
   | "left-end";
-export const CustomPopover = ({
+export const Popover = ({
   placement,
   renderReference,
   renderPopover,

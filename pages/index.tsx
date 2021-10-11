@@ -3,6 +3,7 @@ import { ModalSection } from "../components/sections/ModalSection";
 import { RadioSection } from "../components/sections/RadioSection";
 import { PaginationSection } from "../components/sections/PaginationSection";
 import { EmptyViewSection } from "../components/sections/EmptyViewSection";
+import { PopoverSection } from "../components/sections/PopoverSection";
 
 function Page() {
   return (
@@ -73,6 +74,9 @@ function Page() {
               <li>
                 <a href="#empty-section">Empty View</a>
               </li>
+              <li>
+                <a href="#popover-section">Popover</a>
+              </li>
             </ol>
           </div>
           <div>
@@ -83,6 +87,8 @@ function Page() {
             <PaginationSection />
             <br />
             <EmptyViewSection />
+            <br />
+            <PopoverSection />
           </div>
         </div>
       </div>
