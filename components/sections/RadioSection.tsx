@@ -44,6 +44,7 @@ export function RadioSection() {
             className={css`
               min-height: 200px;
               border-radius: 4px;
+              width: 100%;
             `}
           >
             <Code code={code} />

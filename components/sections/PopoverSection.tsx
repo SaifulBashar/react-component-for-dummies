@@ -99,13 +99,13 @@ export function PopoverSection() {
         <div
           className={css`
             display: flex;
-            width: 100%;
           `}
         >
           <div
             className={css`
               min-height: 200px;
               border-radius: 4px;
+              width: 100%;
             `}
           >
             <Code code={code} />
